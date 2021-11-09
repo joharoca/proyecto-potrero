@@ -18,10 +18,6 @@ body {
     font-family: 'Lora', serif;
 }
 
-.titulo__cabecera {
-
-}
-
 .cabecera {
     background-color: #7374746e;
     padding: 30px;
@@ -77,10 +73,6 @@ body {
 
 .seccion2__titulo {
     margin-bottom: 30px;
-}
-
-.seccion2__video {
-
 }
 
 .video__muestra {
