@@ -9,8 +9,8 @@
     <link rel="icon" href="imagenes/icon1.ico">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,22 +18,28 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="cabecera">
             <h1 class="titulo__cabecera">
                 <a href="index.html" rel="home">Wooloo Handmade</a>
             </h1>
-            <ul class="cabecera__enlaces">
-                <li class="navegacion__items"><a href="index.html">Inicio</a></li>
-                <li class="navegacion__items"><a href="tutoriales.html">Tutoriales</a></li>
-                <li class="navegacion__items"><a href="productos.html">Productos</a></li>
-                <li class="navegacion__items"><a href="contacto.html">Contacto</a></li>
-                <li class="navegacion__items"><a href="https://www.facebook.com/" target="_blank"><img src="imagenes/FacebookLogo.svg"
-                            alt="facebook"></a></li>
-                <li class="navegacion__items"><a href="https://www.instagram.com/wooloo.handmade/" target="_blank"><img
-                            src="imagenes/InstagramLogo.svg" alt="Instagram"></a></li>
-                <li class="navegacion__items"><a href="https://api.whatsapp.com/send?phone=5492915275447" target="_blank"><img
-                            src="/imagenes/WhatsappLogo.svg" alt=""></a></li>
-            </ul>
+            <div class="cabecera__navegacion">
+                <ul class="navegacion cabecera__enlaces">
+                    <li class="navegacion__items"><a href="index.html">Inicio</a></li>
+                    <li class="navegacion__items"><a href="tutoriales.html">Tutoriales</a></li>
+                    <li class="navegacion__items"><a href="productos.html">Productos</a></li>
+                    <li class="navegacion__items"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="cabecera__enlaces">
+                    <li class="navegacion__items navegacion__redes"><a href="https://www.facebook.com/" target="_blank"><img src="public/img/FacebookLogo.svg"
+                                alt="facebook"></a></li>
+                    <li class="navegacion__items navegacion__redes"><a href="https://www.instagram.com/wooloo.handmade/" target="_blank"><img
+                                src="public/img/InstagramLogo.svg" alt="Instagram"></a></li>
+                    <li class="navegacion__items navegacion__redes"><a href="https://api.whatsapp.com/send?phone=5492915275447" target="_blank"><img
+                                src="public/img/WhatsappLogo.svg" alt=""></a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -52,29 +58,29 @@
                     crear.</p>
             </div>
             <div class="seccion2__video">
-                <video class="video__muestra" src="videos/punto-deslizado.mp4" controls></video>
+                <video class="video__muestra" src="public/video/punto-deslizado.mp4" controls></video>
             </div>
         </section>
     </main>
     <footer class="footer__sections">
         <section class="footer__redes">
-            <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/Facebook-footer.svg"
+            <a href="https://www.facebook.com/" target="_blank"><img src="public/img/Facebook-footer.svg"
                     alt="facebook"></a>
-            <a href="https://www.instagram.com/wooloo.handmade/" target="_blank"><img src="imagenes/ig-footer.svg"
+            <a href="https://www.instagram.com/wooloo.handmade/" target="_blank"><img src="public/img/ig-footer.svg"
                     alt="instagram"></a>
             <a href="https://api.whatsapp.com/send?phone=5492915275447" target="_blank"><img
-                    src="imagenes/wp-footer.svg" alt="whatsapp"></a>
+                    src="public/img/wp-footer.svg" alt="whatsapp"></a>
         </section>
-        <section class="footer__contacto">
-            <h4 class="footer__contacto__h4">Contacto</h4>
+        <div class="footer__contacto">
+            <h4 class="footer__h4">Contacto</h4>
             <span>
                 Email:<a class="email" href="mailto:wooloohandmade@gmail.com">wooloohandmade@gmail.com</a>
             </span>
-            <p class="footer__copyright">© Copyright 2021 Wooloo Handmade Crochet
+        </div>
+        <div class="footer__copyright">
+            <p>© Copyright 2021 Wooloo Handmade Crochet
                 All Rights Reserved.</p>
-        </section>
-        <section class="footer__copyright">
-        </section>
+        </div>
     </footer>
 
 

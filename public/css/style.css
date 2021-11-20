@@ -1,0 +1,254 @@
+
+
+html{
+    height: 100%;
+}
+
+body {
+    background-image: url('../img/background-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+ul{
+    list-style: none;
+}
+
+.cabecera{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content:space-between;
+    background-color: #7374746e;
+    color: white;
+}
+
+nav h1{
+    padding-top: 10px;
+}
+
+nav ul{
+    float: right;
+    display: flex;
+}
+
+nav ul li a{        
+    line-height: 80px;
+    padding: 12px, 30px;
+}
+
+nav ul li a:hover{
+    background: rgba(165, 146, 182, 0.7);
+    border-radius: 6px;
+    color: white;
+}
+
+.navegacion{
+    margin-left: 40vh;
+}
+
+.navegacion__items {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.seccion1 {
+    color: #191C2F;
+    min-height: 77vh;
+    display: flex;
+    align-items: center;
+}
+
+.seccion1__bienvenida {
+    width: 440px;
+    position: relative;
+    padding-top: 100px;
+    margin-left: 80px;
+    
+}
+
+.seccion1__titulo {
+    margin-bottom: 40px;
+}
+
+.seccion2 {
+    background-color: aliceblue;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.seccion2__titulo {
+    margin-bottom: 30px;
+}
+
+.video__muestra {
+    width: 500px;
+}
+
+.footer__sections {
+    min-height: 150px;
+    bottom: -1px;
+    background-color: #EBDCF6;
+    color: #191C2F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.footer__redes {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.footer__contacto {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+a.email {
+    color: black;
+}
+
+a.email:hover{
+    background: rgba(165, 146, 182, 0.7);
+    border-radius: 6px;
+}
+
+
+.footer__copyright {
+    position: absolute;
+    bottom: 0%;
+}
+
+@media (max-width:992px){
+    body {
+        background-image: url('../img/logo-wooloo2.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 10px;
+        background-position-x: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cabecera{
+        position: absolute;
+        height: 50px;
+        justify-content: center;
+    }
+
+    .titulo__cabecera{
+        display: none;
+    }
+    
+    .navegacion__redes{
+        display: none;
+    }
+    
+    .cabecera__enlaces{
+        padding-left: 0px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cabecera__navegacion{
+        max-width: 300px;
+    }
+
+    .navegacion__items a{
+        font-size: 12px;
+        padding: 2vh;
+    }
+
+    nav ul li a {
+        line-height: initial;
+    }
+
+    .seccion1{
+        flex-direction: column;
+    }
+
+    .seccion1__bienvenida{
+        max-width: 250px;
+        margin-top: 200px;
+    }
+
+    .seccion1__titulo{
+
+    }
+
+    .seccion1__bienvenida p{
+        max-width: 200px;
+        font-size: 13px;
+    }
+
+    .seccion2__titulo{
+        max-width: 300px;
+    }
+
+    .video__muestra{
+        max-width: 300px;
+    }
+
+    .footer__sections {
+        min-height: 120px;
+    }
+    
+    .footer__redes a img{
+        width: auto;
+        height: auto;
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .footer__redes{
+        top: 15px;
+        left: 20px;
+    }
+
+    div.footer__contacto{
+        position: absolute;
+        top: 16%;
+        left: 33%;
+    }
+
+    .footer__h4{
+        font-size: 16px;
+    }
+
+    span{
+        font-size: 11px;
+    }
+
+    .footer__copyright{
+        font-size: 10px;
+    }
+
+}
