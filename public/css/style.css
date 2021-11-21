@@ -149,11 +149,11 @@ a.email:hover{
 
 @media (max-width:992px){
     body {
-        background-image: url('../img/logo-wooloo2.png');
+        background-image: url('../img/logo-wooloo2.png'), url('../img/ellipse3.png');
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position-y: 10px;
-        background-position-x: center;
+        background-position-y: 10px, 500px;
+        background-position-x: center, 80px;
         margin: 0;
         padding: 0;
     }
@@ -198,19 +198,28 @@ a.email:hover{
     .seccion1__bienvenida{
         max-width: 250px;
         margin-top: 200px;
+        position: relative;
+        margin-left: 15px;
     }
 
     .seccion1__titulo{
-
+        font-weight: bold;
     }
 
     .seccion1__bienvenida p{
         max-width: 200px;
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    .seccion2{
+        background: none;
     }
 
     .seccion2__titulo{
         max-width: 300px;
+    }
+    .seccion2__titulo p{
+        font-size: 12px;
     }
 
     .video__muestra{
