@@ -4,11 +4,7 @@ html{
     height: 100%;
 }
 
-body {
-    background-image: url('../img/background-2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+body{
     font-family: 'Lora', serif;
     display: flex;
     flex-direction: column;
@@ -71,6 +67,10 @@ nav ul li a:hover{
 }
 
 .seccion1 {
+    background-image: url('../img/background/background-logo2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: #191C2F;
     min-height: 77vh;
     display: flex;
@@ -147,9 +147,32 @@ a.email:hover{
     bottom: 0%;
 }
 
+.body__contacto{
+    background-image: url('../img/background/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section__contacto{
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.seccion-form {
+    background-color: #60b9aa7e;
+    padding: 10px;
+}
+
+.iframe{
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width:992px){
-    body {
-        background-image: url('../img/logo-wooloo2.png'), url('../img/ellipse3.png');
+    body{
+        background-image: url('../img/background/logo-ellipse.png'), url('../img/background/ellipse2.png');
         background-repeat: no-repeat;
         background-size: 100%;
         background-position-y: 10px, 500px;
@@ -192,6 +215,7 @@ a.email:hover{
     }
 
     .seccion1{
+        background-image: none;
         flex-direction: column;
     }
 
@@ -258,6 +282,34 @@ a.email:hover{
 
     .footer__copyright{
         font-size: 10px;
+    }
+
+    .body__contacto{
+        background-image: url('../img/background/elipse1.png'), url('../img/background/ellipse2.png');
+        background-repeat: no-repeat;
+        background-size: 40%, 100%;
+        background-position-y: 140px, 500px;
+        background-position-x: 150px, 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section__contacto{
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    .seccion-form{
+        background: none;
+    }
+
+    .formulario{
+        margin-bottom: 30px;
+        max-width: 315px;
+    }
+
+    .mapa{
+        max-width: 315px;
     }
 
 }
