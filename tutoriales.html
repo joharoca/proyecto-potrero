@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="background_repeat">
     <header>
         <nav class="cabecera">
             <h1 class="titulo__cabecera">
@@ -44,57 +44,25 @@
         </nav>
     </header>
     <main>
-<section>
-    <section class="seccion1__carousel">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <!--Video presentacion-->
+        <section class="seccion1__portada">
+            <div class="container productos__portada">
+                <div class="row">
+                    <div class="col-12 seccion1__video">
+                        <div class="caja__video">
+                            <video class="video__muestra" src="public/video/tutorial1.mp4" controls></video>
                         </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="public/img/products/Granny1.jpg" class="d-block w-100" alt="Granny1">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="public/img/products/Granny2.jpg" class="d-block w-100" alt="Granny2">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="public/img/products/Granny3.png" class="d-block w-100" alt="Granny3">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="public/img/products/Granny4.jpg" class="d-block w-100" alt="Granny4">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="public/img/products/Granny5.jpg" class="d-block w-100" alt="Granny5">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</section>
+        </section>
     </main>
-    <!--<footer class="footer__sections">
+    <footer class="footer__sections">
         <section class="footer__redes">
             <a href="https://www.facebook.com/" target="_blank"><img src="public/img/icons/Facebook-footer.svg"
                     alt="facebook"></a>
-            <a href="https://www.instagram.com/wooloo.handmade/" target="_blank"><img src="public/img/icons/ig-footer.svg"
-                    alt="instagram"></a>
+            <a href="https://www.instagram.com/wooloo.handmade/" target="_blank"><img
+                    src="public/img/icons/ig-footer.svg" alt="instagram"></a>
             <a href="https://api.whatsapp.com/send?phone=5492915275447" target="_blank"><img
                     src="public/img/icons/wp-footer.svg" alt="whatsapp"></a>
         </section>
@@ -108,7 +76,7 @@
             <p>© Copyright 2021 Wooloo Handmade Crochet
                 All Rights Reserved.</p>
         </div>
-    </footer>-->
+    </footer>
 
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
