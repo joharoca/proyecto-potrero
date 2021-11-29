@@ -24,8 +24,16 @@
             </h1>
             <div class="cabecera__navegacion">
                 <ul class="navegacion cabecera__enlaces">
-                    <li class="navegacion__items"><a href="index.html">Inicio</a></li>
-                    <li class="navegacion__items"><a href="tutoriales.html">Tutoriales</a></li>
+                    <li class="nav-item dropdown navegacion__items">
+                        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutoriales
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="deslizado.html">Punto deslizado</a></li>
+                            <li><a class="dropdown-item" href="granny.html">Granny square</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     <li class="navegacion__items"><a href="productos.html">Productos</a></li>
                     <li class="navegacion__items"><a href="contacto.html">Contacto</a></li>
                 </ul>
@@ -62,7 +70,7 @@
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
-                                  </select>
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <label for="Consulta" class="form-label">Consulta</label>
