@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="background_repeat">
+<body>
     <header>
         <nav class="cabecera">
             <h1 class="titulo__cabecera">
@@ -25,13 +25,14 @@
             <div class="cabecera__navegacion">
                 <ul class="navegacion cabecera__enlaces">
                     <li class="nav-item dropdown navegacion__items">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tutoriales
+                        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutoriales
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="deslizado.html">Punto deslizado</a></li>
-                          <li><a class="dropdown-item" href="granny.html">Granny square</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="deslizado.html">Punto deslizado</a></li>
+                            <li><a class="dropdown-item" href="granny.html">Granny square</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     <li class="navegacion__items"><a href="productos.html">Productos</a></li>
                     <li class="navegacion__items"><a href="contacto.html">Contacto</a></li>
@@ -51,14 +52,130 @@
         </nav>
     </header>
     <main>
-        <!--Video presentacion-->
-        <section class="seccion1__portada">
+        <!--Carrusel-->
+        <section class="seccion1__carousel">
+            <div class="container-fluid">
+                <div class="seccion1__texto_presentacion">
+                    <h2 class="seccion1__titulo">Aprendamos a tejer: Granny Square</h2>
+                    <p>El Granny Square es un pilar del crochet que todo crochetero debe saber hacer y consiste en un
+                        cuadradito que crece desde el centro, vuelta tras vuelta y nos permite hacer miles de cosas. Podemos
+                        hacer bolsos, bufandas, accesorios, colchas… eso es lo lindo de los Grannys, que mezclando
+                        materiales y tamaños podemos lograr cosas impresionantes, así que vamos a ver el tutorial.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 carousel-full">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="public/img/products/Granny1.jpg" class="d-block w-100" alt="Granny1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/products/Granny2.jpg" class="d-block w-100" alt="Granny2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/products/Granny3.jpg" class="d-block w-100" alt="Granny3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/products/Granny4.jpg" class="d-block w-100" alt="Granny4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/products/Granny5.jpg" class="d-block w-100" alt="Granny5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/products/Granny6.jpg" class="d-block w-100" alt="Granny6">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--tutorial-->
+        <section class="seccion2__granny">
+            <div class="caja__tutorial">
+                <p>Empezaremos nuestro granny básico con un nudo deslizado (o corredizo) y aquí vamos a hacer cuatro
+                    cadenas. Vamos a unir la última y la primera cadena haciendo un punto deslizado en la primera cadena
+                    y aquí ya tenemos el aro central alrededor del cual va a crecer nuestro Granny. Vamos a hacer ahora
+                    tres cadenas, estas cadenas nos van a valer como un punto alto y ahora en el aro central vamos a
+                    hacer dos puntos altos. Ahora vamos a hacer dos cadenas y de nuevo en el aro central vamos a hacer 3
+                    puntos altos. Los tres puntos altos tejidos en el mismo agujero es lo que vamos a llamar de ahora en
+                    adelante un grupo. Ahora vamos a repetir esta secuencia: vamos a hacer dos cadenas y de nuevo un
+                    grupo, es decir tres puntos altos en el mismo agujero. Ya teniendo el tercer grupo y repetimos de
+                    nuevo la secuencia dos cadenas y un grupo. Tenemos ahora cuatro grupos. Para terminar hacemos dos
+                    cadenas y conectamos con la tercera cadena del principio, ahí vamos a hacer un punto deslizado para
+                    cerrar ya nuestra primera vuelta que debe quedar así como un cuadradito:</p>
+                <img src="public/img/tutorials/tutorial-granny1.jpeg" alt="paso1">
+                <p>Podemos cortar éste color, retirarlo y el nuevo color lo vamos a traer siempre en las esquinas.</p>
+                <img src="public/img/tutorials/tutorial-granny2.jpeg" alt="paso2">
+                <p>Traigo mi nuevo color y con él hago tres cadenas. Así siempre vamos a empezar las vueltas y en el
+                    mismo agujero vamos a hacer dos puntos altos para completar el primer grupo. Ahora vamos a hacer dos
+                    cadenas y en este mismo agujero vamos a hacer otro grupo de tres puntos altos ahí en el mismo lugar.
+                    Ahora voy a saltar al siguiente agujero (a la siguiente esquina) donde voy a hacer otra esquina.
+                    Vamos a hacer un grupo de tres puntos altos en ese agujero después dos cadenas y después otro grupo
+                    en ese mismo agujero. Así vamos a trabajar siempre las esquinas. Entonces voy a saltar a la
+                    siguiente esquina donde vuelvo a trabajar lo mismo. Y así sigo trabajando hasta terminar la vuelta.
+                    Cuando ya hagamos la última esquina conectamos con la tercera cadena del principio y hacemos un
+                    punto deslizado para cerrar nuestra segunda vuelta, que ya debe quedar así:</p>
+                <img src="public/img/tutorials/tutorial-granny3.jpeg" alt="paso3">
+                <p>Vamos a cortar el hilo, retirar este color y recuerden que los nuevos colores siempre se traen en las
+                    esquinas. Traigo el nuevo color y siempre empezamos igual: 3 cadenas 2 puntos altos dos cadenas y
+                    otro grupo en el mismo agujero para completar mi esquina. Ahora vamos a ver que los costados van a
+                    haber unos agujeros de la vuelta anterior. En esos agujeros siempre vamos a hacer un grupo (tres
+                    puntos altos en ese agujero del costado) y de nuevo pasamos a una esquina donde trabajamos una
+                    esquina. Y así seguimos repitiendo la secuencia: un grupo en el costado, una esquina en la esquina,
+                    hasta dar toda la vuelta cuando vemos toda la vuelta conectamos con un punto deslizado en la tercera
+                    cadena y ya terminamos nuestra tercera vuelta.</p>
+                <img src="public/img/tutorials/tutorial-granny4.jpeg" alt="paso4">
+                <p>Ahora vamos a trabajar la cuarta vuelta que sería básicamente lo mismo: insertamos el nuevo color en
+                    cualquiera de las esquinas y con él hacemos tres cadenas y luego hacemos dos puntos altos en esa
+                    misma esquina para terminar este primer grupo y hacemos dos cadenas y un grupo en el mismo agujero
+                    para completar ya la primera esquina de la nueva vuelta. Pasamos a trabajar en los costados que
+                    vamos a ver que siempre van a tener un agujerito más que la vuelta anterior (aquí 2, en la siguiente
+                    3, en la siguiente 4, etc.) y siempre los trabajamos igual: un grupo en cada agujero. No importa si
+                    tenemos dos agujeros como aquí o diez agujeros porque ya llevamos muchas vueltas, siempre hacemos un
+                    grupo en cada agujero que vayamos encontrando. Sigo trabajando en la misma secuencia hasta dar toda
+                    la vuelta, cierro con punto deslizado, retiro el color y ya sólo nos queda decidir cuándo parar
+                    según el tamaño que queramos darle a nuestro Granny.</p>
+                <img src="public/img/tutorials/tutorial-granny5.jpeg" alt="paso5">
+            </div>
+        </section>
+        <!--Video-->
+        <section class="seccion3__video-granny">
             <div class="container productos__portada">
                 <div class="row">
-                    <div class="col-12 seccion1__video">
+                    <div class="col-12 seccion__video_granny">
                         <div class="caja__video">
-                            <video class="video__muestra" src="public/video/tutorial1.mp4" controls></video>
+                            <iframe class="video__muestra" width="640" height="360" src="https://www.youtube.com/embed/KMpJVo7efOU"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
+                    </div>
+                    <div class="col-12 col-md-6">
                     </div>
                 </div>
             </div>
