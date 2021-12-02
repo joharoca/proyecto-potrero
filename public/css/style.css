@@ -1,4 +1,4 @@
-
+/* General */
 
 html{
     height: 100%;
@@ -22,9 +22,15 @@ ul{
     list-style: none;
 }
 
+p{
+    margin-top: 10px;
+}
+
+/* HEADER all */
+
 .cabecera{
     position: fixed;
-    z-index: 10;
+    z-index: 11;
     top: 0;
     left: 0;
     width: 100%;
@@ -47,7 +53,7 @@ nav ul{
     display: flex;
 }
 
-nav ul li a{        
+nav ul li a{
     line-height: 80px;
     padding: 12px, 30px;
 }
@@ -67,16 +73,16 @@ nav ul li a:hover{
     padding-right: 5px;
 }
 
+/* MAIN INDEX section1 - portada */
+
 .seccion1 {
     background-image: url('../img/background/background-logo2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     min-height: 77vh;
     display: flex;
     align-items: center;
-    text-align: justify;
 }
 
 .seccion1__bienvenida {
@@ -85,12 +91,17 @@ nav ul li a:hover{
     position: absolute;
     margin-top: 100px;
     margin-left: 80px;
-    
+}
+
+.seccion1__bienvenida p{
+    text-align: justify;
 }
 
 .seccion1__titulo {
     margin-bottom: 40px;
 }
+
+/* MAIN INDEX section2 */
 
 .seccion2 {
     min-height: 80vh;
@@ -105,9 +116,18 @@ nav ul li a:hover{
     margin-bottom: 30px;
 }
 
+.seccion2__video{
+    width: 727px;
+    height: 409px;
+}
+
 .video__muestra {
     border-radius: 2%;
+    width: 100%;
+    height: 100%;
 }
+
+/* FOOTER all */
 
 .footer__sections {
     min-height: 150px;
@@ -149,6 +169,8 @@ a.email:hover{
     bottom: 0%;
 }
 
+/* MAIN CONTACTO section1 */
+
 .background__contacto, .background_repeat{
     background-image: url('../img/background/background1.png');
     background-repeat: repeat-y;
@@ -157,49 +179,71 @@ a.email:hover{
 }
 
 .section__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     margin-top: 150px;
     margin-bottom: 50px;
+}
+
+.section__contacto h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.formulario{
+    width: 50%;
 }
 
 .seccion-form, .caja__video {
     background-color: #aaaaaad7;
     padding: 10px;
     border-radius: 3%;
+    margin: 20px;
 }
 
-.iframe{
-    width: 100%;
-    height: 100%;
-}
+/* MAIN PRODUCTOS section1 */
 
 .seccion1__portada{
     height: 450px;
 }
 
+.productos__portada-texto{
+    margin-bottom: 0px;
+}
+
+.caja__video__chica{
+    margin-left: 0px;
+}
+
 .seccion1__video{
-    height: 100%;
-    margin-top: 60px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .productos__portada{
     margin-top: 110px;
 }
 
+/* MAIN PRODUCTOS section2 */
+
+.btn-primary{
+    background-color: rgb(165, 146, 182);
+    border-color: rgb(165, 146, 182);
+}
+
+.card{
+    padding: 5px;
+}
+
 .row__separacion{
     margin-bottom: 30px;
 }
 
-.seccion1__texto_presentacion{
-    z-index: 10;
-    width: 440px;
-    position: absolute;
+/* MAIN GRANNY section1 - portada */
+
+.seccion1__caja{
     margin-top: 150px;
-    margin-left: 80px;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 2%;
     color: white;
@@ -226,12 +270,7 @@ a.email:hover{
     padding-right: 0;
 }
 
-.seccion__video_granny{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* MAIN GRANNY section2 - tutorial */
 
 .seccion2__granny{
     display: flex;
@@ -244,6 +283,26 @@ a.email:hover{
     text-align: justify;
 }
 
+/* MAIN GRANNY section3 - video tutorial */
+
+.seccion__video_tutorial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-container{
+    margin: 25px;
+}
+
+/* DESLIZADO */
+
+.caja__video__tutorial{
+    width: 490px;
+    height: 300px;
+}
+
+/* VISTAS MOVILES */
 
 @media (max-width:992px){
     body{
@@ -256,30 +315,31 @@ a.email:hover{
         padding: 0;
     }
 
+    /* Header all */
     .cabecera{
         position: absolute;
         height: 50px;
         justify-content: center;
     }
 
-    .titulo__cabecera{
+    .logo__cabecera{
         padding-top: 0px;
         margin-left: 0vh;
         font-size: 90%;
     }
-    
-    .navegacion__redes{
-        display: none;
-    }
-    
-    .cabecera__enlaces{
-        padding-left: 0px;
-        flex-direction: row;
-        justify-content: center;
-    }
 
     .cabecera__navegacion{
         max-width: 220px;
+    }
+
+    .navegacion__redes{
+        display: none;
+    }
+
+    .cabecera__redes{
+        padding-left: 0px;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .navegacion__items a{
@@ -290,6 +350,8 @@ a.email:hover{
     nav ul li a {
         line-height: initial;
     }
+
+    /* MAIN INDEX section1 */
 
     .seccion1{
         background-image: url('../img/background/background1.png');
@@ -318,6 +380,8 @@ a.email:hover{
         margin-bottom: 0px;
     }
 
+    /* MAIN INDEX section2 */
+
     .seccion2{
         background: none;
     }
@@ -334,10 +398,12 @@ a.email:hover{
         max-height: 200px;
     }
 
+    /* FOOTER all */
+
     .footer__sections {
         min-height: 120px;
     }
-    
+
     .footer__redes a img{
         width: auto;
         height: auto;
@@ -368,15 +434,7 @@ a.email:hover{
         font-size: 10px;
     }
 
-    .body__contacto{
-        background-image: url('../img/background/elipse1.png'), url('../img/background/ellipse2.png');
-        background-repeat: no-repeat;
-        background-size: 40%, 100%;
-        background-position-y: 140px, 500px;
-        background-position-x: 150px, 80px;
-        margin: 0;
-        padding: 0;
-    }
+    /* MAIN CONTACTO */
 
     .section__contacto{
         margin-top: 50px;

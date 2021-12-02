@@ -19,26 +19,26 @@
 <body class="background_repeat">
     <header>
         <nav class="cabecera">
-            <h1 class="titulo__cabecera">
+            <h1 class="logo__cabecera">
                 <a href="index.html" rel="home">Wooloo Handmade</a>
             </h1>
             <div class="cabecera__navegacion">
                 <ul class="navegacion cabecera__enlaces">
                     <li class="nav-item dropdown navegacion__items">
-                        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tutoriales
+                        <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Tutoriales
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="deslizado.html">Punto deslizado</a></li>
-                          <li><a class="dropdown-item" href="granny.html">Granny square</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="deslizado.html">Punto deslizado</a></li>
+                            <li><a class="dropdown-item" href="granny.html">Granny square</a></li>
                         </ul>
                     <li class="navegacion__items"><a href="productos.html">Productos</a></li>
                     <li class="navegacion__items"><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
             <div>
-                <ul class="cabecera__enlaces">
+                <ul class="cabecera__redes">
                     <li class="navegacion__items navegacion__redes"><a href="https://www.facebook.com/"
                             target="_blank"><img src="public/img/icons/FacebookLogo.svg" alt="facebook"></a></li>
                     <li class="navegacion__items navegacion__redes"><a href="https://www.instagram.com/wooloo.handmade/"
@@ -51,14 +51,96 @@
         </nav>
     </header>
     <main>
-        <!--Video presentacion-->
-        <section class="seccion1__portada">
-            <div class="container productos__portada">
+        <!--Carrusel-->
+        <section class="seccion1__carousel">
+            <div class="container-fluid">
+                <div class="seccion1__caja seccion1__bienvenida">
+                    <h2 class="seccion1__titulo">Aprendamos a tejer: Punto Deslizado</h2>
+                    <p>Vamos a aprender a hacer el punto deslizado, punto raso o punto enano. Como su nombre lo indica
+                        es un punto que nos ayuda a deslizarnos en el tejido, aunque también se usa para coser prendas o
+                        coser dos piezas de tejido. Vamos a verlo:</p>
+                </div>
                 <div class="row">
-                    <div class="col-12 seccion1__video">
-                        <div class="caja__video">
-                            <video class="video__muestra" src="public/video/tutorial1.mp4" controls></video>
+                    <div class="col-12 carousel-full">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="public/img/tutorials/CÓMO-UNIR-CUADRADOS-DE-CROCHET-CON-PUNTO-DESLIZADO1.jpg"
+                                        class="d-block w-100" alt="Granny1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/tutorials/CÓMO-UNIR-CUADRADOS-DE-CROCHET-CON-PUNTO-DESLIZADO2.jpg"
+                                        class="d-block w-100" alt="Granny2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/tutorials/CÓMO-UNIR-CUADRADOS-DE-CROCHET-CON-PUNTO-DESLIZADO3.jpg"
+                                        class="d-block w-100" alt="Granny3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/tutorials/CÓMO-UNIR-CUADRADOS-DE-CROCHET-CON-PUNTO-DESLIZADO4.jpg"
+                                        class="d-block w-100" alt="Granny4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="public/img/tutorials/CÓMO-UNIR-CUADRADOS-DE-CROCHET-CON-PUNTO-DESLIZADO5.jpg"
+                                        class="d-block w-100" alt="Granny5">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--tutorial-->
+        <section class="seccion2__granny">
+            <div class="caja__tutorial">
+                <p>Para empezar el punto deslizado podemos (o no) hacer una cadena para separarme un poco de la fila
+                    anterior. Vamos a girar nuestro trabajo y directamente en la primera cadena o punto que tengamos
+                    vamos a empezar con nuestro punto deslizado. Vamos a insertar el ganchillo en punto, enganchamos el
+                    hilo, salimos y nos quedan dos aritos así:</p>
+                <img src="public/img/tutorials/tutorial-deslizado1.jpeg" alt="paso1">
+                <p>El primer arito lo vamos a pasar a través del segundo (por dentro). Repetimos: insertamos,
+                    enganchamos hilo, salimos y el primer arito lo pasamos por el segundo:</p>
+                <img src="public/img/tutorials/tutorial-deslizado2.jpeg" alt="paso2">
+                <p>Es un punto bastante invisible, se queda ahí pegadito al tejido, por eso nos sirve para deslizarnos
+                    sin altura, para deslizarnos en nuestro tejido en partes donde no queremos que se vea y también nos
+                    sirve para coser varias piezas:</p>
+                <img src="public/img/tutorials/tutorial-deslizado3.jpeg" alt="paso3">
+                <p>así seguimos por todo el borde de nuestro proyecto depende de lo que estemos cosiendo o tejiendo.</p>
+                <div>
+                    <div class="caja__video caja__video__tutorial caja__video__chica">
+                        <video class="video__muestra" width="640" height="360" src="public/video/tutorial1.mp4" controls></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Video-->
+        <section class="seccion3__video_tutorial">
+            <div class="container video-container">
+                <div class="row">
+                    
+                    <div class="col-12 col-md-6">
                     </div>
                 </div>
             </div>
